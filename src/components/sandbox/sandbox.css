@@ -1,0 +1,5 @@
+:host ::ng-deep .p-dropdown-label,
+:host ::ng-deep .p-select-label {
+  justify-content: flex-start !important; /* text ko left align karega */
+  text-align: left !important;
+}

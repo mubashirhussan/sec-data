@@ -12,22 +12,23 @@
         pInputText
         [(ngModel)]="url"
         type="text"
-        class="min-w-[350px]"
+        class="sm:w-[350px] w-full"
         placeholder="Type Url"
       />
       <p-select
         [options]="formTypes"
         [(ngModel)]="selectedType"
         optionLabel="name"
-        placeholder="Form Type"
-        class="w-full md:w-40"
+        (onChange)="onFormTypeChange()"
+        placeholder="Select Form Type"
+        class="w-full sm:w-48"
       />
       <p-select
         [options]="sections"
         [(ngModel)]="selectedSection"
         optionLabel="name"
-        placeholder="Section"
-        class="w-full md:w-40"
+        placeholder="Select Section"
+        class="w-full sm:w-[350px]"
       />
     </div>
 
