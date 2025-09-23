@@ -1,0 +1,11 @@
+::ng-deep .p-menubar-end {
+  margin-left: 0 !important;
+}
+::ng-deep .p-menubar {
+  justify-content: space-between !important;
+}
+
+::ng-deep .p-menubar-button {
+  order: 2;
+  margin-left: auto;
+}
