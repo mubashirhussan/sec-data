@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { BadgeModule } from 'primeng/badge';
@@ -23,7 +23,10 @@ import { ButtonModule } from 'primeng/button';
 export class App implements OnInit {
   protected title = 'sec-data';
   items: MenuItem[] | undefined;
-
+  constructor(private router: Router) {}
+  goHome() {
+    this.router.navigate(['/']);
+  }
   ngOnInit() {
     this.items = [
       { label: 'Products', items: [{ label: 'API 1' }, { label: 'API 2' }] },

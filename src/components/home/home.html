@@ -1,27 +1,47 @@
-<div class="flex items-center justify-center h-[calc(100vh-80px)]">
-  <div class="flex flex-col items-center gap-4">
-    <!-- 1st line -->
-    <div class="flex flex-wrap gap-2">
-      <input pInputText [(ngModel)]="url" type="text" placeholder="Type Url" />
-      <p-select
-        [options]="cities"
-        [(ngModel)]="selectedCity"
-        optionLabel="name"
-        placeholder="Select a Form Type"
-        class="w-full md:w-56"
-      />
-      <p-select
-        [options]="cities"
-        [(ngModel)]="selectedCity"
-        optionLabel="name"
-        placeholder="Select a Form Type"
-        class="w-full md:w-56"
-      />
+<div class="h-[calc(100vh-80px)] flex flex-col justify-between overflow-hidden">
+  <div class="max-w-[1280px] mx-auto text-left mt-30 px-4">
+    <div class="text-[45px] font-semibold text-gray-800">
+      The easiest way to search and analyze
     </div>
 
-    <!-- 2nd line -->
-    <div>
-      <p-button label="Submit" />
+    <div class="text-[72px] font-bold text-gray-900 my-2">18+ million</div>
+
+    <div class="text-[45px] font-semibold text-gray-800">SEC EDGAR filings</div>
+
+    <p class="mt-4 text-[22px] font-light text-[#586069]">
+      Access any SEC dataset with our simple-to-use APIs
+    </p>
+
+    <button
+      class="mt-14 px-6 text-[16px] py-3 bg-[#2b6aca] cursor-pointer text-white rounded-md hover:bg-blue-700"
+      (click)="goToSandbox()"
+    >
+      Try it in our sandbox
+    </button>
+  </div>
+
+  <div class="w-full">
+    <svg
+      class="w-full h-60"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      preserveAspectRatio="none"
+    >
+      <path
+        fill="url(#grad1)"
+        fill-opacity="1"
+        d="M-28.25 0C-168.65 0 -291.083 35.6667 -334.75 53.5V634H2274.75V29C2141.42 73.1667 1866.75 169.438 1397.25 150C834.75 126.712 418.25 0 -28.25 0Z"
+      ></path>
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: #2b6aca; stop-opacity: 1" />
+          <stop offset="100%" style="stop-color: #1e40af; stop-opacity: 1" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="text-center mb-4 text-lg font-medium text-black -mt-12">
+      Trusted by industry leaders worldwide
     </div>
   </div>
 </div>

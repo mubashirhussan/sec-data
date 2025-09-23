@@ -4,7 +4,10 @@
   <div class="w-full max-w-[1280px]">
     <p-menubar [model]="items" class="!px-5 !bg-white flex justify-between">
       <ng-template #start>
-        <div class="flex flex-col items-center gap-2">
+        <div
+          class="flex flex-col items-center gap-2 cursor-pointer"
+          (click)="goHome()"
+        >
           <svg
             width="28"
             height="30"
@@ -37,7 +40,7 @@
             pButton
             pRipple
             label="Login"
-            class="!hidden md:!flex !bg-[#2b6aca] !text-white !px-4 !py-2 !rounded-md"
+            class="!hidden md:!flex !bg-[#2b6aca] !text-white !px-4 !py-2 !rounded-md hover:!bg-blue-700"
           ></button>
         </div>
       </ng-template>
